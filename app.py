@@ -115,7 +115,7 @@ def home(request: Request):
     """
     Serves the main search engine homepage.
     """
-    return templates.TemplateResponse("index.html", {"request": request})
+   return templates.TemplateResponse(request, "index.html")
 
 
 # Takes in: q (string) - user's current prefix in the search box
